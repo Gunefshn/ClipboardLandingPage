@@ -65,3 +65,48 @@ header p {
   background-color: #6174ff;
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
+
+/* HERO START */
+.hero {
+  display: grid;
+}
+.hero h2 {
+  color: #4c545c;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -0.59px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+.hero p {
+  color: #9eabb2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.14px;
+  text-align: center;
+}
+.hero .hero-middle {
+  margin-bottom: 150px;
+  display: flex;
+  gap: 110px;
+}
+.hero-middle-cards {
+  padding-top: 68px;
+  padding-bottom: 98px;
+  display: grid;
+  gap: 56px;
+}
+.hero-middle-card h3 {
+  color: #4c545c;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.39px;
+}
+
+.hero .hero-top {
+  margin-bottom: 80px;
+}
+/* HERO END */
