@@ -12,150 +12,168 @@
     <link rel="stylesheet" href="assets/css/Clipboard.css" />
     <title>Clipboard Landing Page</title>
   </head>
+
   <body>
     <div class="container">
-      <!-- Header Start -->
-      <header>
-        <img src="assets/img/company-logo.png" alt="company-logo" />
+      <div class="hero">
+        <a href="#"
+          ><img src="assets/img/compnay-logo.svg" alt="Company Logo"
+        /></a>
         <h1>Kopyaladığınız her şeyin geçmişi</h1>
-        <p class="container-p">
+        <p>
           Pano, kopyaladığınız her şeyi takip etmenizi ve düzenlemenizi sağlar.
           Panonuza tüm cihazlarınızdan anında erişin.
         </p>
-        <div class="buttons">
-          <button class="green-btn">iOS için indirin</button>
-          <button class="blue-btn">MAC için indirin</button>
+        <div class="download-btns">
+          <a class="ios-btn" href="#">iOS için indirin</a>
+          <a class="mac-btn" href="#">MAC için indirin</a>
         </div>
-      </header>
-      <!-- Header End -->
-      <!-- Hero Start -->
-      <section class="hero">
-        <h2 class="hero-title">Parçacıklarınızın kaydını tutun</h2>
+      </div>
+
+      <div class="section-snippets">
+        <h2>Parçacıklarınızın kaydını tutun</h2>
         <p>
           Pano, kopyaladığınız her öğeyi anında buluta depolar; bu da, tüm
           cihazlarınızdan anında parçacığınıza erişebileceğiniz anlamına gelir.
           Mac ve iOS uygulamalarımız her şeyi düzenlemenize yardımcı olur.
         </p>
-        <div class="hero-middle">
-          <img src="assets/img/hero-mac-img.png" alt="hero-mac-img" />
-          <div class="hero-middle-cards">
-            <div class="hero-middle-card">
-              <h3>Hızlı Arama</h3>
-              <p>
-                Parçacıklarınızı içerik, kategori, web adresi, uygulama ve daha
-                fazlasına göre kolayca arayın.
-              </p>
-            </div>
-            <div class="hero-middle-card">
-              <h3>iCloud Senkronizasyonu</h3>
-              <p>
-                Tüm cihazlarınızda parçacıkları anında kaydeder ve senkronize
-                eder.
-              </p>
-            </div>
-            <div class="hero-middle-card">
-              <h3>Tam Tarih</h3>
-              <p>
-                Retrieve any snippets from the first moment you started using
-                the app.
-              </p>
-            </div>
+        <div class="snippets-content">
+          <img
+            class="imac-desktop"
+            src="assets/img/imac-desktop-img.png"
+            alt="iMac Desktop Img"
+          />
+          <img
+            class="imac-mobile"
+            src="assets/img/imac-mobile-img.png"
+            alt="iMac Mobile Img"
+          />
+          <!-- 
+          Araştırma konusu - özelliği
+          img srcset araştırılacak 
+        -->
+          <div class="snippets-content-text">
+            <h3>Hızlı Arama</h3>
+            <p>
+              Parçacıklarınızı içerik, kategori, web adresi, uygulama ve daha
+              fazlasına göre kolayca arayın.
+            </p>
+
+            <h3>iCloud Senkronizasyonu</h3>
+            <p>
+              Tüm cihazlarınızda parçacıkları anında kaydeder ve senkronize
+              eder.
+            </p>
+
+            <h3>Tam Tarih</h3>
+            <p>
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
           </div>
         </div>
-        <h2 class="hero-title">Panoya her yerden erişin</h2>
+      </div>
+
+      <div class="section-clipboard">
+        <h2>Panoya her yerden erişin</h2>
         <p>
           İster hareket halinde olun, ister bilgisayarınızda olun, birkaç basit
           tıklamayla tüm Pano parçacıklarınıza erişebilirsiniz.
         </p>
-        <img src="assets/img/access-tablet-img.png" alt="access-tablet-img" />
-        <h2 class="hero-title">İş akışınızı güçlendirin</h2>
-        <p>We’ve got the tools to boost your productivity.</p>
-      </section>
-      <!-- Hero End -->
-      <!-- Workflow Section Start -->
-      <section class="workflow-section">
-        <div class="workflow">
-          <img src="assets/img/list-icon.png" alt="list-icon" />
-          <h3>Kara listeler oluşturun</h3>
-          <p>
-            Belirli kaynakları hariç tutarak hassas bilgilerin panonuza asla
-            ulaşmamasını sağlayın.
-          </p>
-        </div>
-        <div class="workflow">
-          <img src="assets/img/text-icon.png" alt="text-icon" />
-          <h3>Düz metin parçacıkları</h3>
-          <p>
-            Tutarlı bir görünüm için kopyalanan metinden istenmeyen
-            biçimlendirmeleri kaldırın.
-          </p>
-        </div>
-        <div class="workflow">
-          <img src="assets/img/eye-icon.png" alt="eye-icon" />
-          <h3>Gizli önizleme</h3>
-          <p>
-            Panonuzdaki tüm kod parçacıklarının hızlı önizlemesini yaparak kolay
-            erişim sağlayın.
-          </p>
-        </div>
-      </section>
-      <!-- Workflow Section End -->
-      <!-- Logos Section Start -->
-      <section class="logos-section">
-        <img src="assets/img/Google.png" alt="Google-Logo" />
-        <img src="assets/img/IBM-logo.png" alt="IBM-logo" /><img
-          src="assets/img/Microsoft-logo.png"
-          alt="Microsoft-logo"
-        /><img
-          src="assets/img/hewlettPackardEnterprise-logo.png"
-          alt="hewlettPackardEnterprise-logo"
-        /><img
-          src="assets/img/vector-graphics.png"
-          alt="vector-graphics-logo"
+
+        <img
+          class="tablet-phone-desktop"
+          src="assets/img/mac-tablet-phone-desktop-img.png"
+          alt="Mac Tablet & Phone Desktop Img"
         />
-      </section>
-      <!-- Logos Section End -->
-      <!-- Clipboard Section Start -->
-      <section class="clipboard-section">
-        <h1>iOS ve Mac OS için Pano</h1>
-        <p class="container-p">
+        <img
+          class="tablet-phone-mobile"
+          src="assets/img/mac-tablet-phone-mobile-img.png"
+          alt="Mac Tablet & Phone Mobile Img"
+        />
+      </div>
+
+      <div class="section-supercharge">
+        <h2>İş akışınızı güçlendirin</h2>
+        <p class="supercharge-text">
+          Üretkenliğinizi artıracak araçlara sahibiz.
+        </p>
+
+        <div class="supercharge-items">
+          <div class="supercharge-item">
+            <img src="assets/img/blacklist-icon.svg" alt="Blacklist Icon" />
+            <h3>Kara listeler oluşturun</h3>
+            <p>
+              Belirli kaynakları hariç tutarak hassas bilgilerin panonuza asla
+              ulaşmamasını sağlayın.
+            </p>
+          </div>
+
+          <div class="supercharge-item">
+            <img src="assets/img/text-icon.svg" alt="Text Icon" />
+            <h3>Düz metin parçacıkları</h3>
+            <p>
+              Tutarlı bir görünüm için kopyalanan metinden istenmeyen
+              biçimlendirmeleri kaldırın.
+            </p>
+          </div>
+
+          <div class="supercharge-item">
+            <img src="assets/img/eye-icon.svg" alt="Sneak Icon" />
+            <h3>Gizli önizleme</h3>
+            <p>
+              Panonuzdaki tüm kod parçacıklarının hızlı önizlemesini yaparak
+              kolay erişim sağlayın.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="company-logos">
+        <img src="assets/img/google-icon.png" alt="Google Icon" />
+        <img src="assets/img/vector-icon.png" alt="Vector Icon" />
+        <img src="assets/img/google-icon.png" alt="Google Icon" />
+        <img src="assets/img/vector-icon.png" alt="Vector Icon" />
+        <img src="assets/img/google-icon.png" alt="Google Icon" />
+      </div>
+
+      <div class="clipboards-for-ios-macos">
+        <h2>iOS ve Mac OS için Pano</h2>
+        <p>
           App Store'da ücretsiz olarak mevcuttur. Mac veya iOS için indirin,
           iCloud ile senkronize edin ve panonuza eklemeye başlayın.
         </p>
-        <div class="buttons">
-          <button class="green-btn">iOS için indirin</button>
-          <button class="blue-btn">MAC için indirin</button>
+        <div class="download-btns">
+          <a class="ios-btn" href="#">iOS için indirin</a>
+          <a class="mac-btn" href="#">MAC için indirin</a>
         </div>
-      </section>
-      <!-- Clipboard Section End -->
-      <!-- Footer Start -->
-      <footer>
-        <a href="/"
+      </div>
+
+      <div class="footer">
+        <a href="#"
           ><img
-            class="footer-img"
-            src="assets/img/company-logo.png"
-            alt="company-logo"
+            src="assets/img/compnay-icon-footer.png"
+            alt="Company Logo Footer"
         /></a>
-        <div class="links">
-          <a href="#">SSS</a>
-          <a href="#">Gizlilik Politikası</a>
-          <a href="#">Kurulum Kılavuzu</a>
-          <a href="#">Bize Ulaşın</a>
-          <a href="#">Basın Kiti</a>
+        <ul>
+          <li>SSS</li>
+          <li>Gizlilik Politikası</li>
+          <li>Kurulum Kılavuzu</li>
+          <li>İletişim</li>
+          <li>Basın Kiti</li>
+        </ul>
+        <div class="social-media">
+          <a href="#"
+            ><img src="assets/img/facebook-icon.png" alt="Facebook Icon"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/twitter-icon.png" alt="Twitter Icon"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/instagram-icon.png" alt="Instagram Icon"
+          /></a>
         </div>
-        <div class="social-links">
-          <a href="#"
-            ><img src="assets/img/facebook-icon.png" alt="facebook-icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/twitter-icon.png" alt="twitter-icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/instagram-icon.png" alt="instagram-icon"
-          /></a>
-        </div>
-      </footer>
-      <!-- Footer End -->
+      </div>
     </div>
   </body>
 </html>
