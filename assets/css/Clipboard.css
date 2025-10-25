@@ -263,6 +263,7 @@ ul {
 @media (width > 1023px) {
   .container {
     padding-inline: 165px;
+    max-width: 1440px;
   }
 
   .hero h1 {
