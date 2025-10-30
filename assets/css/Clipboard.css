@@ -14,11 +14,9 @@ a {
 }
 
 .container {
-  /* max-width: 375px; */
   margin: auto;
   background-color: #fff;
   padding: 123px 32px 51px 32px;
-
   background-image: url(/assets/img/background.png);
   background-repeat: no-repeat;
 }
@@ -58,7 +56,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
   width: 100%;
   margin-bottom: 160px;
 }
@@ -87,6 +84,7 @@ a {
   border-radius: 28px;
 }
 
+/* SECTION SNIPPETS*/
 .section-snippets {
   margin-bottom: 186px;
 }
@@ -101,7 +99,7 @@ a {
   margin-bottom: 16px;
 }
 
-.section-snippets p {
+.section-snippets > p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -115,8 +113,28 @@ a {
   display: none;
 }
 
+.snippets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .imac-mobile {
   margin-bottom: 56px;
+  max-width: 100%;
+  height: auto;
+}
+
+.snippets-content-texts {
+  width: 100%;
+}
+
+.snippets-content-text {
+  margin-bottom: 56px;
+}
+
+.snippets-content-text:last-child {
+  margin-bottom: 0;
 }
 
 .snippets-content-text h3 {
@@ -126,6 +144,16 @@ a {
   letter-spacing: -0.39px;
   text-align: center;
   color: #4c545c;
+  margin-bottom: 18px;
+}
+
+.snippets-content-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.12px;
+  text-align: center;
+  color: #9eabb2;
 }
 
 .section-clipboard {
@@ -232,7 +260,6 @@ a {
 .footer {
   margin-inline: -32px;
   background-color: #f5f7f7;
-
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -251,7 +278,6 @@ ul {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.14px;
-
   color: #4c545c;
 }
 
@@ -260,6 +286,7 @@ ul {
   gap: 40px;
 }
 
+/* DESKTOP */
 @media (width > 1023px) {
   .container {
     padding-inline: 165px;
@@ -285,17 +312,16 @@ ul {
   .download-btns {
     flex-direction: row;
     justify-content: center;
-
-    a {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 30px;
-      letter-spacing: 0.5px;
-      text-align: center;
-      padding: 13px 36px;
-    }
   }
 
+  .download-btns a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 13px 36px;
+  }
   .section-snippets h2 {
     font-weight: 600;
     font-size: 36px;
@@ -303,13 +329,14 @@ ul {
     letter-spacing: -0.59px;
   }
 
-  .section-snippets p {
+  .section-snippets > p {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.14px;
     text-align: center;
     padding-inline: 190px;
+    margin-bottom: 80px;
   }
 
   .imac-mobile {
@@ -318,17 +345,50 @@ ul {
 
   .snippets-content {
     display: flex;
+    flex-direction: row;
     gap: 110px;
+    align-items: flex-start;
   }
 
   .imac-desktop {
     display: block;
-    height: 406px;
+    width: 752px;
+    height: auto;
     margin-left: -165px;
+    flex-shrink: 0;
+  }
+
+  .snippets-content-texts {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
   }
 
   .snippets-content-text {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .snippets-content-text h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.39px;
+    text-align: left;
+    color: #4c545c;
+    margin-bottom: 10px;
+  }
+
+  .snippets-content-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.12px;
+    text-align: left;
+    color: #9eabb2;
+    margin: 0;
   }
 
   .section-clipboard h2 {
